@@ -52,8 +52,6 @@ public class ProductService {
         catch(EntityNotFoundException e){
             throw new EntityNotFoundException("Product not found");
         }
-        
-
 
     }   
 
