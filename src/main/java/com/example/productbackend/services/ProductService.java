@@ -28,6 +28,18 @@ public class ProductService {
                    );
     }
 
+    public void deleteProductById(long id) {
+        if(this.repository.existsById(id)){
+            this.repository.deleteById(id);
+        }
+        else {
+            throw new EntityNotFoundException("Product not found");
+        }
+
+
+        
+    }
+
 
 }
 
