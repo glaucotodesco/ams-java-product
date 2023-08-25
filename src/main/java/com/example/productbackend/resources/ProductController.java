@@ -22,7 +22,7 @@ import com.example.productbackend.services.ProductService;
 
 @RestController
 @RequestMapping("products")
-public class ProductContoller {
+public class ProductController {
 
     @Autowired
     private ProductService service;
